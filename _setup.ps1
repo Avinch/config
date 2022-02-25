@@ -19,6 +19,28 @@ function Install-Packages($packages){
     Write-Host "Finished installing packages!" -ForegroundColor Green
 }
 
+function Add-StartupFiles($files){
+    
+    Write-Host "Adding startup files" -ForegroundColor Yellow
+
+    $Shell = New-Object -ComObject ("WScript.Shell")
+
+    foreach($file in $files){
+            Write-Host "Adding file to startup" $file -ForegroundColor Yellow
+            
+            $splitName = $file -split "/"
+            $fileName = $splitName[$splitName.Count - 1]
+            
+            $ShortCut = $Shell.CreateShortcut($env:USERPROFILE + "\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\" + $fileName + ".lnk")
+            $ShortCut.TargetPath=$baseConfigDir + $file
+            $ShortCut.Save()
+            
+            Write-Host "Installed to startup" $file -ForegroundColor Green
+    }
+
+    Write-Host "Finished adding startup files!" -ForegroundColor Green
+}
+
 function Set-PowershellProfile($fileName){
     
     Write-Host "Setting PowerShell profile" -ForegroundColor Yellow
@@ -65,6 +87,8 @@ foreach($p in $profileData){
         }
 
         Install-Packages $p.packages
+
+        Add-StartupFiles $p.startupFiles
 
         Write-Host "== Profile" $p.name "complete!" -ForegroundColor Green
     }

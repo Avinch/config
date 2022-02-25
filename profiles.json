@@ -1,6 +1,7 @@
 [
   {
     "name": "core",
+    "startupFiles": ["ahk/explorerOpenNewWindow.ahk"],
     "packages": [
       "AgileBits.1Password",
       "7zip.7zip",
