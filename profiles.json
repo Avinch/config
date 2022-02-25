@@ -39,7 +39,7 @@
   },
   {
     "name": "work-bls",
-    "psProfile": "bls.ps1",
+    "psProfile": "psProfiles/bls.ps1",
     "packages": [
       "Microsoft.Teams",
       "Citrix.Workspace",
@@ -51,7 +51,7 @@
   },
   {
     "name": "personal",
-    "psProfile": "main.ps1",
+    "psProfile": "psProfiles/main.ps1",
     "packages": [
       "Valve.Steam",
       "Logitech.GHUB",
