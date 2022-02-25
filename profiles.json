@@ -1,0 +1,67 @@
+[
+  {
+    "name": "core",
+    "packages": [
+      "AgileBits.1Password",
+      "7zip.7zip",
+      "ShareX.ShareX",
+      "Lexikos.AutoHotkey",
+      "CPUID.HWMonitor",
+      "voidtools.Everything.Lite",
+      "Mozilla.Firefox.DeveloperEdition",
+      "Google.Chrome",
+      "Microsoft.WindowsTerminal.Preview",
+      "Microsoft.WindowsTerminal",
+      "Notepad++.Notepad++",
+      "JanDeDobbeleer.OhMyPosh",
+      "CodeSector.TeraCopy",
+      "VideoLAN.VLC",
+      "WinDirStat.WinDirStat",
+      "Microsoft.PowerShell",
+      "Microsoft.PowerToys"
+    ]
+  },
+  {
+    "name": "dev",
+    "packages": [
+      "Microsoft.AzureStorageExplorer",
+      "Microsoft.AzureStorageEmulator",
+      "Microsoft.VisualStudioCode",
+      "DBBrowserForSQLite.DBBrowserForSQLite",
+      "Microsoft.dotnet",
+      "Microsoft.SQLServerManagementStudio",
+      "JetBrains.Toolbox",
+      "Postman.Postman",
+      "Fork.Fork",
+      "Git.Git"
+    ]
+  },
+  {
+    "name": "work-bls",
+    "psProfile": "bls.ps1",
+    "packages": [
+      "Microsoft.Teams",
+      "Citrix.Workspace",
+      "Telerik.Fiddler.Classic",
+      "Microsoft.Office",
+      "Microsoft.AzureCLI",
+      "SonicWALL.NetExtender"
+    ]
+  },
+  {
+    "name": "personal",
+    "psProfile": "main.ps1",
+    "packages": [
+      "Valve.Steam",
+      "Logitech.GHUB",
+      "Google.ChromeRemoteDesktop",
+      "NordVPN.NordVPN",
+      "TeamViewer.TeamViewer",
+      "StartIsBack.StartAllBack",
+      "Discord.Discord",
+      "Discord.Discord.PTB",
+      "Discord.Discord.Canary",
+      "MehediHassan.Tweeten"
+    ]
+  }
+]
